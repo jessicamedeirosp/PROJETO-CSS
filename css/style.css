@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--black);
+}
+
+body.dark {
+    color: var(--white);
+}
+
+:root {
+    --white: #ffffff;
+    --gray: #BBBDBF;
+    --pink: #D818A5;
+    --blue: #264DE4;
+    --orange: #F06529;
+    --yellow: #F7DF1E;
+    --black: #3A3B40;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile {
+    width: 100%;
+    max-width: 360px;
+    height: 640px;
+    border-radius: 16px;
+    padding: 32px;
+    padding-top: 24.98px;
+    text-align: center;
+    position: relative;
+}
+
+.profile::before {
+    content: '';
+    width: 360px;
+    height: 640px;
+    background-image: url("../assets/bkg-light.svg");
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+body.dark .profile::before {
+    background-image: url("../assets/bkg.svg");
+}
+
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 4.59px;
+    margin-bottom: 25.96px;
+}
+
+.photo__wrapper {
+    position: relative;
+    width: 121.73px;
+    margin: auto;
+}
+
+.photo__wrapper::before {
+    content: '';
+    background: url("../assets/verified.svg") no-repeat 100%;
+    width: 29px;
+    height: 37px;
+    display: block;
+    position: absolute;
+    left: 93px;
+    top: 90px;
+    z-index: 1;
+}
+
+.photo {
+    width: 100%;
+    border-radius: 50%;
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.25));
+}
+
+
+.profile__wrapper {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+
+    border-radius: 16px;
+    margin-top: 20px;
+    padding: 16px 0;
+    margin-bottom: 16px;
+}
+
+.profile__name {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.profile__stack {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 24px;
+}
+
+.body.dark .description {
+    color: var(--gray);
+}
+
+.social-media__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 32px;
+    height: 32px;
+    background-color: var(--pink);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-media__wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon__linkedin {
+    background-image: url("../assets/linkedin.svg");
+}
+
+.icon__github {
+    background-image: url("../assets/github.svg");
+}
+
+.icon__whatsapp {
+    background-image: url("../assets/whatsapp.svg");
+}
+
+.hard-skills {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    margin-top: 42px;
+}
+
+.hard-skills__icon img {
+    width: 25px;
+}
+
+.hard-skills__icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hard-skills__html {
+    background-color: var(--orange);
+    border-color: var(--orange);
+}
+
+.hard-skills__css {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+.hard-skills__js {
+    background-color: var(--yellow);
+    border-color: var(--yellow);
+}
+
+.hard-skills__js img {
+    width: 37px;
+}
+
+.hard-skills__icon::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    z-index: -1;
+    border-radius: 8px;
+    border: 1px solid;
+    border-color: inherit;
+    display: block;
+}
+
+.hard-skills__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stars {
+    display: flex;
+    margin-top: 16px;
+}
+
+/* switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 28.2px;
+    height: 14.04px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(58, 59, 64, 0.75);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    width: 11.23px;
+    height: 11.23px;
+    left: 1.4px;
+    bottom: 1.4px;
+    background: #F1F1F1;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: rgba(58, 59, 64, 0.75);
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
