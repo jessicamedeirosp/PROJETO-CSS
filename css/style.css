@@ -71,7 +71,7 @@ body.dark .profile::before {
     background-image: url("../assets/bkg.svg");
 }
 
-.theme {
+.theme__wrapper {
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -234,22 +234,20 @@ body.dark .profile::before {
     margin-top: 16px;
 }
 
-/* switch */
-.switch {
+.switch__wrapper {
     position: relative;
     display: inline-block;
     width: 28.2px;
     height: 14.04px;
 }
 
-/* Hide default HTML checkbox */
-.switch input {
+
+.switch__theme {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-/* The slider */
 .slider {
     position: absolute;
     cursor: pointer;
@@ -274,11 +272,11 @@ body.dark .profile::before {
     transition: .4s;
 }
 
-input:checked+.slider {
+.switch__theme:checked+.slider {
     background: var(--black-300);
 }
 
-input:checked+.slider:before {
+.switch__theme:checked+.slider:before {
     -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px);
     transform: translateX(15px);
