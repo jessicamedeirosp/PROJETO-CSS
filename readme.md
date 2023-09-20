@@ -1,8 +1,9 @@
 O projeto que desenvolvi para o workshop da [cubos academy](https://cubos.academy/) está agora disponível em [CSS Descomplicado](https://www.youtube.com/watch?v=SC9p1mpF9tk). 
 
-- [Template do projeto](https://github.com/cubos-academy/projeto-css--template)
+- [Template do Projeto](https://github.com/cubos-academy/projeto-css--template)
+- [Link do Projeto em Produção](https://projetocss-jesscoder.netlify.app/)
   
-### Ferramentas usadas:
+### Ferramentas Usadas:
 - Vscode
 
 ### Linguagens
@@ -17,9 +18,9 @@ O projeto que desenvolvi para o workshop da [cubos academy](https://cubos.academ
 <img src="https://i.imgur.com/4BLAq10.png" width="350px" />
 
 
-## Documentação para auxiliar no entendimento do projeto
+## Documentação para Auxiliar no Entendimento do Projeto
 
-### Shorthand properties 
+### Shorthand Properties 
 
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties
 
