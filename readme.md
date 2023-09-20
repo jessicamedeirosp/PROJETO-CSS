@@ -1,13 +1,34 @@
-## Shorthand properties 
+O projeto que desenvolvi para o workshop da [cubos academy](https://cubos.academy/) está agora disponível em [CSS Descomplicado](https://www.youtube.com/watch?v=SC9p1mpF9tk). 
+
+- [Template do projeto](https://github.com/cubos-academy/projeto-css--template)
+  
+### Ferramentas usadas:
+- Vscode
+
+### Linguagens
+- HTML
+- CSS
+- Javascript
+
+## Layout
+
+<img src="https://i.imgur.com/FljXjuK.png" align="left" width="350px" />
+
+<img src="https://i.imgur.com/4BLAq10.png" width="350px" />
+
+
+## Documentação para auxiliar no entendimento do projeto
+
+### Shorthand properties 
 
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties
 
-### Examples: 
+Exemplos: 
 - [Background](https://www.w3schools.com/css/css_background_shorthand.asp)
 
 - [Font](https://www.w3schools.com/css/css_font_shorthand.asp)
 
-## Prefixes CSS
+### Prefixes CSS
 - Android/iOS/Safari/Chrome: -webkit-*
 
 - Firefox: -moz-*
@@ -16,7 +37,7 @@
 
 - Opera: -o-*
 
-## Flexbox
+### Flexbox
 
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
 
@@ -24,12 +45,12 @@
 
 - https://www.w3schools.com/css/css3_flexbox.asp
 
-## Pseudo-elements
+### Pseudo-elements
 - https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-elements
 
 - https://www.w3schools.com/css/css_pseudo_elements.asp
 
-### Examples: 
+Exemplos: 
 - before
 - after
 
